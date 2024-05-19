@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "playground",
+			"path": "."
+		},
+		{
+			"name": "chess-piece-images",
+			"path": "../../Chess-Classifier/playground/chess-piece-images"
+		},
+		{
+			"name": "models",
+			"path": "../../Chess-Classifier/playground/models"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

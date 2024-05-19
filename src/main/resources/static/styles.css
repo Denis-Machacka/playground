@@ -1,0 +1,66 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-shadow: none;
+}
+
+p.lead, .form-group label, #answer, #answerPart p {
+    color: #333;
+}
+
+#answerPart {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#answer {
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+    padding: 15px;
+}
+
+.img-thumbnail {
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #6c757d;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-file-label:hover {
+    background-color: #5a6268;
+}

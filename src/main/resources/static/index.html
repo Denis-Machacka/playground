@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Piece Classification</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h1 class="display-4 mt-5">Chess Piece Classification</h1>
+                <p class="lead">Upload an image of a chess piece, and our AI model will identify it for you.</p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="imageUpload" class="h5">Choose an image file (JPEG, PNG) to upload</label>
+                        <div class="custom-file">
+                            <input type="file" accept="image/png, image/jpeg" class="custom-file-input" id="image" name="image" onchange="checkFiles(this.files);">
+                            <label class="btn btn-secondary" for="image">Choose file</label>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="answerPart" class="mt-5" style="display: none;">
+                    <p><b>Classification Result:</b></p>
+                    <div id="answer" class="alert alert-info"></div>
+
+                    <p class="mt-4"><b>Uploaded Image Preview:</b></p>
+                    <img id="preview" class="img-thumbnail" width="300" src="#" alt="preview" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.custom-file-input').addEventListener('change', function(e) {
+            var fileName = document.getElementById("image").files[0].name;
+            var nextSibling = e.target.nextElementSibling;
+            nextSibling.innerText = fileName;
+        });
+    </script>
+</body>
+
+</html>
